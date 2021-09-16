@@ -24,10 +24,10 @@ ul{
 header{
     background-color:rgb(88, 60, 60);
     color: seashell;
-    min-height: 70px;
+    min-height: 80%;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    padding: 5px 0;
+    padding: 20px 0;
     position: sticky;
     top: 0px;
 }
@@ -47,12 +47,13 @@ header ul {
 
 header li {
     list-style: none;
-    padding: 0 20px;
+    padding: 0 10px;
 } 
 #auto h1 {
+    font-size: 40px;
     font-weight: bold;
     font-style: italic;
-    padding-left: 20px;
+    padding-left: 20px; 
     display: flex;
     justify-content: center;
 }
@@ -60,19 +61,25 @@ header li {
     color: seashell;
     font-size: 75px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 #mission {
     color: seashell;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 20px;
-    text-align: center;
-    /* display: flex; 
-    align-items: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;   
+}
+
+@media (max-width: 700 px) {header .container #auto #title #img #mission {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+    
 }
 
